@@ -3,7 +3,7 @@
         xmlns:views="clr-namespace:MonPingV4.Views"
         x:Class="MonPingV4.Views.MainWindow"
         Icon="/Assets/avalonia-logo.ico"
-        Width="400" Height="300"
+        Width="600" Height="300"
         Title="MonPing Hosts">
     <views:PingHostsListView/>    
 

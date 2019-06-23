@@ -4,10 +4,25 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="MonPingV4.Views.PingHostsListView">
- <DockPanel>
-    <Button DockPanel.Dock="Bottom">Add an Host</Button>
-    <StackPanel>
-      <CheckBox Margin="4">Test</CheckBox>
-    </StackPanel>
-  </DockPanel>
+ <StackPanel 
+    Margin="10">
+		<TextBox 
+    Watermark="ip address or hostname" 
+    Name="host_one"
+    Width="180"
+    Margin="5"
+    HorizontalAlignment="Left"/>
+    <TextBox 
+    Watermark="ip address or hostname" 
+    Name="host_two"
+    Width="180"
+    Margin="5"
+    HorizontalAlignment="Left"/>
+     <TextBox 
+    Watermark="ip address or hostname" 
+    Name="host_three"
+    Width="180"
+    Margin="5"
+    HorizontalAlignment="Left"/>
+	</StackPanel>
 </UserControl>
