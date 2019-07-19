@@ -5,8 +5,19 @@
              xmlns:local="clr-namespace:MonPingV4.ViewModels.PingHostsVM"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="MonPingV4.Views.PingHostsListView">
-    
-    <StackPanel Margin="10">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel 
+        Margin="10">
         <TextBox 
         Watermark="ip address or hostname" 
         Name="host_1"
@@ -22,8 +33,9 @@
             HorizontalAlignment="Left"
             Width="60" 
             Command="{Binding OnClickCommand}">
-            Toggle
+            Ping
         </ToggleButton>
     </StackPanel>
+    </Grid>
 
 </UserControl>
