@@ -15,5 +15,6 @@ namespace MonPingV4.Views
         {
             AvaloniaXamlLoader.Load(this);
         }
+        
     }
 }
