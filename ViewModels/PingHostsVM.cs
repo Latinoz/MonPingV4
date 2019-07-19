@@ -30,7 +30,6 @@ namespace MonPingV4.ViewModels
 
             set
             {
-                //value = Iphost;
                 Iphost = value;
             }
         }
@@ -38,6 +37,8 @@ namespace MonPingV4.ViewModels
         public void OnClickCommand()
         {
             // do something
+            //PingClass obj = new PingClass();
+            //obj.DoPingThreadAsync();
         }
 
     }

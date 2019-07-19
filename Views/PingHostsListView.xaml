@@ -14,9 +14,16 @@
         Margin="5"
         HorizontalAlignment="Left"         
         Text= "{Binding Path=iphost, Mode=TwoWay}"/>
-        <Button 
-            Width="160" 
-            Command="{Binding OnClickCommand}">Ping</Button>
+        <!--<Button 
+            HorizontalAlignment="Left"
+            Width="60" 
+            Command="{Binding OnClickCommand}">Ping</Button>-->
+        <ToggleButton
+            HorizontalAlignment="Left"
+            Width="60" 
+            Command="{Binding OnClickCommand}">
+            Toggle
+        </ToggleButton>
     </StackPanel>
 
 </UserControl>
