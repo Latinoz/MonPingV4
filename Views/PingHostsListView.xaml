@@ -26,15 +26,15 @@
                     <MenuItem Header="_Exit"/>
                 </MenuItem>
                 <MenuItem Header="_Edit">
-                    <MenuItem Header="Copy"/>
-                    <MenuItem Header="Paste"/>
+                    <MenuItem Header="Copy"/>                    
                 </MenuItem>
             </Menu>
         </DockPanel>
 
         <Grid
              Grid.Column="0" 
-             Grid.Row="1">
+             Grid.Row="1"
+             Margin="10">
         <Grid.RowDefinitions>
             <RowDefinition  Height="Auto"></RowDefinition>            
         </Grid.RowDefinitions>
@@ -42,20 +42,22 @@
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
-        </Grid.ColumnDefinitions>
-        
+        </Grid.ColumnDefinitions>        
+            
         <TextBox 
-        Grid.Column="0" Grid.Row="0"
+        Grid.Column="0" 
+        Grid.Row="0"
         Watermark="ip address or hostname" 
         Name="host_1"
         Width="180"
         Margin="5"
         HorizontalAlignment="Left"         
-        Text= "{Binding Path=iphost, Mode=TwoWay}"/>
+        Text= "{Binding Path=Iphost, Mode=TwoWay}"/>
         
         <TextBlock
-            Grid.Column="1" Grid.Row="0"
-         Text="hello"/>
+         Grid.Column="1" 
+         Grid.Row="0"
+         Text="{Binding Path=OutputAnswer}"/>
 
          <!--<Button 
          HorizontalAlignment="Left"
@@ -63,11 +65,12 @@
          Command="{Binding OnClickCommand}">Ping</Button>-->
         
         <ToggleButton
-            Grid.Column="2" Grid.Row="0"
-            HorizontalAlignment="Left"
-            Width="60" 
-            Command="{Binding OnClickCommand}">
-            Ping
+         Grid.Column="2" 
+         Grid.Row="0"
+         HorizontalAlignment="Left"
+         Width="60" 
+         Command="{Binding OnClickCommand}"
+         Content="Ping">         
         </ToggleButton>    
     </Grid>
 
