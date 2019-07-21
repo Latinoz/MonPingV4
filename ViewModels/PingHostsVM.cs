@@ -36,7 +36,6 @@ namespace MonPingV4.ViewModels
 
         public void OnClickCommand()
         {
-            // do something
             //PingClass obj = new PingClass();
             //obj.DoPingThreadAsync();
         }
