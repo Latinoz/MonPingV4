@@ -44,7 +44,6 @@ namespace MonPingV4.ViewModels
         {
             get
             {
-
                 return outputAnswer;
             }
 
@@ -55,6 +54,23 @@ namespace MonPingV4.ViewModels
             //}
         }
 
+        bool ischecked;
+
+        public bool IsChecked
+        {
+            get
+            {
+
+                return ischecked;
+            }
+
+            set
+            {
+                ischecked = value;
+            }
+        }
+
+
         public async void OnClickCommand()
         {
             PingClass obj = new PingClass();
@@ -62,6 +78,7 @@ namespace MonPingV4.ViewModels
             answer = await obj.DoPingThreadAsync(iphost);
             if (answer == TextOutAnswer.Success)
             {
+                
                 outputAnswer = "ICMP answer received";
             }
             else if (answer == TextOutAnswer.Warning)
@@ -76,6 +93,7 @@ namespace MonPingV4.ViewModels
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
+
         public void OnPropertyChanged([CallerMemberName]string prop = "")
         {
             if (PropertyChanged != null)

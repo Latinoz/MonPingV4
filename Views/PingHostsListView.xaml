@@ -57,6 +57,7 @@
         <TextBlock
          Grid.Column="1" 
          Grid.Row="0"
+         Name="textblock_host_1"
          Text="{Binding Path=OutputAnswer}"/>
 
          <!--<Button 
@@ -70,9 +71,10 @@
          HorizontalAlignment="Left"
          Width="60" 
          Command="{Binding OnClickCommand}"
+         IsChecked="{Binding Path=IsChecked}"
          Content="Ping">         
-        </ToggleButton>    
-    </Grid>
+        </ToggleButton>
+        </Grid>
 
     </Grid>
 
