@@ -22,6 +22,7 @@ namespace MonPingV4.ViewModels
 
         public TextOutAnswer answer;
 
+
         string iphost = "127.0.0.1";
 
         public string Iphost
@@ -60,7 +61,6 @@ namespace MonPingV4.ViewModels
         {
             get
             {
-
                 return ischecked;
             }
 
@@ -70,36 +70,37 @@ namespace MonPingV4.ViewModels
             }
         }
 
-
-        public async void OnClickCommand()
+        private async void DoIT(string iphost)
         {
+            //this.iphost = iphost;
+            
             PingClass obj = new PingClass();
 
-            //if (iphost == null)                   //Проверка на пустое поле
-            //{
-            //    outputAnswer = "Enter ip address";
-            //    OnPropertyChanged("OutputAnswer");
-            //}
+            answer = await obj.DoPingThreadAsync(iphost);
 
-            //else
-            //{
-                answer = await obj.DoPingThreadAsync(iphost);
+            if (answer == TextOutAnswer.Success)
+            {
+                outputAnswer = "ICMP answer received";
+            }
+            else if (answer == TextOutAnswer.Warning)
+            {
+                outputAnswer = "Host is not available!";
+            }
+            else if (answer == TextOutAnswer.Error)
+            {
+                outputAnswer = "Invalid ip address!";
+            }
+            OnPropertyChanged("OutputAnswer");
+        }
 
-                if (answer == TextOutAnswer.Success)
-                {
+        public void OnClickCommand_0()
+        {
+            DoIT(iphost);                        
+        }
 
-                    outputAnswer = "ICMP answer received";
-                }
-                else if (answer == TextOutAnswer.Warning)
-                {
-                    outputAnswer = "Host is not available!";
-                }
-                else if (answer == TextOutAnswer.Error)
-                {
-                    outputAnswer = "Invalid ip address!";
-                }
-                OnPropertyChanged("OutputAnswer");
-            //}            
+        public void OnClickCommand_1()
+        {
+            DoIT(iphost);
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

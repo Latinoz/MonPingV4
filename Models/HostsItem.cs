@@ -6,7 +6,7 @@ namespace MonPingV4.Models
 {
     public class HostsItem
     {
-        public string Address { get; set; }
+        public string Iphost { get; set; }
         public bool IsChecked { get; set; }
     }
 }
