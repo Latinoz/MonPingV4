@@ -8,7 +8,7 @@ using MonPingV4.Models;
 
 namespace MonPingV4.ViewModels
 {
-    public class PingHostsVM : ViewModelBase, INotifyPropertyChanged
+    public class PingHostsVM : INotifyPropertyChanged
     {
 
         //public PingHostsVM(IEnumerable<HostsItem> items)
