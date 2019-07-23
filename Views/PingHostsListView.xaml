@@ -9,7 +9,9 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"></RowDefinition>
-            <RowDefinition Height="Auto"></RowDefinition>           
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
@@ -70,12 +72,58 @@
         <ToggleButton
          Grid.Column="2" 
          Grid.Row="0"
+         Name="toggleButton_1"
          HorizontalAlignment="Left"
          Width="60" 
          Command="{Binding OnClickCommand}"
          IsChecked="{Binding Path=IsChecked}"
          Content="Ping">         
-        </ToggleButton>
+        </ToggleButton>      
+
+        </Grid>
+
+        <Grid
+             Grid.Column="0" 
+             Grid.Row="2"
+             Margin="10">
+            <Grid.RowDefinitions>
+                <RowDefinition  Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <TextBox 
+        Grid.Column="0" 
+        Grid.Row="0"
+        Watermark="ip address or hostname" 
+        Name="host_2"
+        Width="180"
+        Margin="5"
+        HorizontalAlignment="Left"         
+        Text= "{Binding Path=Iphost, Mode=TwoWay}"/>
+
+            <TextBlock
+         Grid.Column="1" 
+         Grid.Row="0"
+         Name="textblock_host_2"
+         HorizontalAlignment="Center"
+         Margin="5"
+         Text="{Binding Path=OutputAnswer}"/>         
+
+         <ToggleButton
+         Grid.Column="2" 
+         Grid.Row="0"
+         Name="toggleButton_2"
+         HorizontalAlignment="Left"
+         Width="60" 
+         Command="{Binding OnClickCommand}"
+         IsChecked="{Binding Path=IsChecked}"
+         Content="Ping">
+         </ToggleButton>
+
         </Grid>
 
     </Grid>
