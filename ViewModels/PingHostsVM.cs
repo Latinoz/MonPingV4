@@ -54,7 +54,7 @@ namespace MonPingV4.ViewModels
             //}
         }
 
-        bool ischecked;
+        bool ischecked = false;
 
         public bool IsChecked
         {
@@ -74,22 +74,32 @@ namespace MonPingV4.ViewModels
         public async void OnClickCommand()
         {
             PingClass obj = new PingClass();
-            //var test = obj.DoPingThreadAsync(iphost);
-            answer = await obj.DoPingThreadAsync(iphost);
-            if (answer == TextOutAnswer.Success)
-            {
-                
-                outputAnswer = "ICMP answer received";
-            }
-            else if (answer == TextOutAnswer.Warning)
-            {
-                outputAnswer = "Host is not available!";
-            }
-            else if (answer == TextOutAnswer.Error)
-            {
-               outputAnswer = "Invalid ip address!";
-            }
-            OnPropertyChanged("OutputAnswer");
+
+            //if (iphost == null)                   //Проверка на пустое поле
+            //{
+            //    outputAnswer = "Enter ip address";
+            //    OnPropertyChanged("OutputAnswer");
+            //}
+
+            //else
+            //{
+                answer = await obj.DoPingThreadAsync(iphost);
+
+                if (answer == TextOutAnswer.Success)
+                {
+
+                    outputAnswer = "ICMP answer received";
+                }
+                else if (answer == TextOutAnswer.Warning)
+                {
+                    outputAnswer = "Host is not available!";
+                }
+                else if (answer == TextOutAnswer.Error)
+                {
+                    outputAnswer = "Invalid ip address!";
+                }
+                OnPropertyChanged("OutputAnswer");
+            //}            
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

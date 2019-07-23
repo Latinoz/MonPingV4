@@ -9,37 +9,35 @@ namespace MonPingV4.Models
 {
     public class PingClass
     {
-        //переменная для подсчета количества icmp запросов
-
         //переменная вывода сообщения в окно "вывода"
         public TextOutAnswer outAnswer;
 
-        //Метод отправки icmp запросов в цикле
-        public async Task<TextOutAnswer> DoPingThreadAsync(string address)
+        private async Task<IPStatus> DoWork(string address)
         {
+            PingReply reply;
+
             Ping pingSender = new Ping();
 
+            reply = pingSender.Send(address);
+            Thread.Sleep(1000);
+            return reply.Status;
+        }
+
+        //Метод отправки icmp запросов 
+        public async Task<TextOutAnswer> DoPingThreadAsync(string address)
+        { 
             try
-            {
-                PingReply reply;
+            {                
                 {
-                    {
-                        var result = await Task.Run(() =>
-                        {
-                            reply = pingSender.Send(address);
-                            Thread.Sleep(1000);
-                            return reply.Status;
-                        });
+                    {                       
+                        var result = await DoWork(address);
 
                         if (result == IPStatus.Success)
-                        {
-                            //outAnswer = "ICMP answer received - " + n + " times" + '\n';
-                            //outAnswer = "ICMP answer received";
+                        {                            
                             outAnswer = TextOutAnswer.Success;
                         }
                         else
-                        {
-                            //outAnswer = "Host is not available!";
+                        {                            
                             outAnswer = TextOutAnswer.Warning;
                         }
                         return outAnswer;
@@ -48,8 +46,7 @@ namespace MonPingV4.Models
             }
 
             catch (PingException)
-            {
-                //outAnswer = "Invalid ip address!";
+            {               
                 outAnswer = TextOutAnswer.Error;
             }
             return outAnswer;

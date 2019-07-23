@@ -58,6 +58,8 @@
          Grid.Column="1" 
          Grid.Row="0"
          Name="textblock_host_1"
+         HorizontalAlignment="Center"
+         Margin="5"
          Text="{Binding Path=OutputAnswer}"/>
 
          <!--<Button 
