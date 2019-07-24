@@ -4,6 +4,7 @@
 using System;
 using Avalonia.Controls;
 using Avalonia.Controls.Templates;
+using Avalonia.Diagnostics.ViewModels;
 using MonPingV4.ViewModels;
 
 namespace MonPingV4
