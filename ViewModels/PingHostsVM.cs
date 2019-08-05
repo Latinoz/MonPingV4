@@ -18,9 +18,9 @@ namespace MonPingV4.ViewModels
         {
             Items = new ObservableCollection<HostsItem>
             {
-                new HostsItem {Iphost = "127.0.0.1",OutputAnswer = "Test 111", IsChecked = false},
-                new HostsItem {Iphost = "127.0.0.2",OutputAnswer = "Test 222", IsChecked = false},
-                new HostsItem {Iphost = "127.0.0.3",OutputAnswer = "Test 333", IsChecked = false}
+                new HostsItem {Iphost = "127.0.0.1", OutputAnswer = "Test 111", IsChecked = false},
+                new HostsItem {Iphost = "127.0.0.2", OutputAnswer = "Test 222", IsChecked = false},
+                new HostsItem {Iphost = "127.0.0.3", OutputAnswer = "Test 333", IsChecked = false}
             }; 
         }
 
