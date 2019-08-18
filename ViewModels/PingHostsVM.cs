@@ -24,6 +24,7 @@ namespace MonPingV4.ViewModels
             }; 
         }
 
+        
 
         private async void DoIT(string iphost)
         {
