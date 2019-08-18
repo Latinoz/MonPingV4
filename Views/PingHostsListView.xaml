@@ -111,21 +111,24 @@
                 </ItemsControl.ItemTemplate>
             </ItemsControl>
         </Grid>
+        
+        
+        
 
-            <Grid
+        <Grid
              Grid.Column="0" 
              Grid.Row="3"
              Margin="10">
 
-                <ToggleButton           
-              Name="toggleButton_Add"
-              HorizontalAlignment="Left"
-              Width="60" 
-              Command="{Binding OnClickCommand_Add}"                   
-              Content="Add">
-                </ToggleButton>
+            <ToggleButton           
+            Name="toggleButton_Add"
+            HorizontalAlignment="Left"
+            Width="60" 
+            Command="{Binding OnClickCommand_Add}"                   
+            Content="Add">
+            </ToggleButton>
 
-            </Grid>
+        </Grid>
 
 
 
