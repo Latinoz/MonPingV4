@@ -4,6 +4,8 @@ using Avalonia.Logging.Serilog;
 using MonPingV4.ViewModels;
 using MonPingV4.Views;
 using MonPingV4.Services;
+using MonPingV4.Models;
+using System.Collections.ObjectModel;
 
 namespace MonPingV4
 {
@@ -30,7 +32,9 @@ namespace MonPingV4
             var window = new MainWindow
             {
                 //DataContext = new MainWindowViewModel(db),
+
                 DataContext = new PingHostsVM()
+
             };
 
             app.Run(window);

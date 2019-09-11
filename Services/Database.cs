@@ -11,7 +11,7 @@ namespace MonPingV4.Services
         {
            new HostsItem { Iphost = "127.0.0.1" },
            new HostsItem { Iphost = "127.0.0.2" },
-           new HostsItem { Iphost = "127.0.0.3", IsChecked = true },
+           new HostsItem { Iphost = "127.0.0.3", IsChecked_1 = false },
        };
     }
 }
