@@ -100,8 +100,7 @@ namespace MonPingV4.Models
                 }
                 else
                 {
-                    //DoIT(iphost);
-
+                    
                     answer = await obj.DoPingThreadAsync(iphost);
 
                     if (answer == TextOutAnswer.Success)
@@ -127,11 +126,9 @@ namespace MonPingV4.Models
 
         public void OnClickCommand_Stop()
         {
-            _stop = true;
-            //outputAnswer = string.Empty;
+            _stop = true;            
             ischecked_1 = false;
-            ischecked_2 = true;
-            //OnPropertyChanged("OutputAnswer");
+            ischecked_2 = true;            
             OnPropertyChanged("IsChecked_1");
             OnPropertyChanged("IsChecked_2");
         }

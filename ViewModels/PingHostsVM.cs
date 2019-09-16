@@ -8,6 +8,7 @@ using MonPingV4.Models;
 using MonPingV4.Services;
 using System.Linq;
 using System.Windows.Input;
+using DynamicData;
 
 namespace MonPingV4.ViewModels
 {
@@ -36,6 +37,10 @@ namespace MonPingV4.ViewModels
             Items.Add(new HostsItem() { Iphost = "127.0.0.10", OutputAnswer = "", IsChecked_1 = false, IsChecked_2 = true });
         }
 
+        public void OnClickCommand_Del()
+        {
+            Items.RemoveAt(Items.Count - 1);
+        }
 
 
         public event PropertyChangedEventHandler PropertyChanged;
