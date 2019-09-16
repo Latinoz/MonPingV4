@@ -81,7 +81,7 @@
                     Margin="10"
                     HorizontalAlignment="Right"
                     Width="60" 
-                    Command="{Binding OnClickCommand_0}"
+                    Command ="{Binding OnClickCommand_Start}"
                     IsChecked="{Binding IsChecked_1}"
                     Content="Start">
                         </ToggleButton>
@@ -102,7 +102,7 @@
                     Margin="10"
                     HorizontalAlignment="Right"
                     Width="60" 
-                    Command="{Binding OnClickCommand_1}"
+                    Command="{Binding OnClickCommand_Stop}"
                     IsChecked="{Binding IsChecked_2}"
                     Content="Stop">
                         </ToggleButton>
