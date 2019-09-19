@@ -27,7 +27,7 @@ namespace MonPingV4.Models
             set
             {
                 iphost = value;
-                OnPropertyChanged("Iphost");
+                OnPropertyChanged(nameof(Iphost));
             }
         }
 
@@ -42,7 +42,7 @@ namespace MonPingV4.Models
             set
             {
                 outputAnswer = value;
-                OnPropertyChanged("OutputAnswer");
+                OnPropertyChanged(nameof(OutputAnswer));
             }
         }
 
@@ -57,7 +57,7 @@ namespace MonPingV4.Models
             set
             {
                 ischecked_1 = value;
-                OnPropertyChanged("IsChecked_1");
+                OnPropertyChanged(nameof(IsChecked_1));
             }
         }
 
@@ -71,7 +71,7 @@ namespace MonPingV4.Models
             set
             {
                 ischecked_2 = value;
-                OnPropertyChanged("IsChecked_2");
+                OnPropertyChanged(nameof(IsChecked_2));
             }
         }
 
@@ -84,8 +84,8 @@ namespace MonPingV4.Models
             _stop = false;
             ischecked_1 = true;
             ischecked_2 = false;
-            OnPropertyChanged("IsChecked_1");
-            OnPropertyChanged("IsChecked_2");
+            OnPropertyChanged(nameof(IsChecked_1));
+            OnPropertyChanged(nameof(IsChecked_2));
 
             PingClass obj = new PingClass();
 
@@ -94,7 +94,7 @@ namespace MonPingV4.Models
                 if (_stop == true)
                 {
                     outputAnswer = string.Empty;
-                    OnPropertyChanged("OutputAnswer");
+                    OnPropertyChanged(nameof(OutputAnswer));
                     break;
                     
                 }
@@ -115,7 +115,7 @@ namespace MonPingV4.Models
                     {
                         outputAnswer = "Invalid ip address!";
                     }
-                    OnPropertyChanged("OutputAnswer");
+                    OnPropertyChanged(nameof(OutputAnswer));
 
                     Debug.WriteLine(outputAnswer);
                 }
@@ -129,8 +129,8 @@ namespace MonPingV4.Models
             _stop = true;            
             ischecked_1 = false;
             ischecked_2 = true;            
-            OnPropertyChanged("IsChecked_1");
-            OnPropertyChanged("IsChecked_2");
+            OnPropertyChanged(nameof(IsChecked_1));
+            OnPropertyChanged(nameof(IsChecked_2));
         }
                
 
@@ -161,7 +161,7 @@ namespace MonPingV4.Models
 
         public event PropertyChangedEventHandler PropertyChanged;
 
-        public void OnPropertyChanged([CallerMemberName]string prop = "")
+        public void OnPropertyChanged(string prop = "")
         {
             if (PropertyChanged != null)
                 PropertyChanged(this, new PropertyChangedEventArgs(prop));
