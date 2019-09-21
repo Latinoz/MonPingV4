@@ -23,11 +23,11 @@ namespace MonPingV4.ViewModels
         {
             Items = new ObservableCollection<HostsItem>
             {
-                new HostsItem {Iphost = "127.0.0.1", OutputAnswer = "", IsChecked_1 = false, IsChecked_2 = true},
-                new HostsItem {Iphost = "127.0.0.2", OutputAnswer = "", IsChecked_1 = false, IsChecked_2 = true},
-                new HostsItem {Iphost = "127.0.0.3", OutputAnswer = "", IsChecked_1 = false, IsChecked_2 = true},
-                new HostsItem {Iphost = "127.0.0.4", OutputAnswer = "", IsChecked_1 = false, IsChecked_2 = true},
-                new HostsItem {Iphost = "127.0.0.5", OutputAnswer = "", IsChecked_1 = false, IsChecked_2 = true}
+                new HostsItem {Iphost = "127.0.0.1", OutputAnswer = " ", IsChecked_1 = false, IsChecked_2 = true},
+                new HostsItem {Iphost = "127.0.0.2", OutputAnswer = " ", IsChecked_1 = false, IsChecked_2 = true},
+                new HostsItem {Iphost = "127.0.0.3", OutputAnswer = " ", IsChecked_1 = false, IsChecked_2 = true},
+                new HostsItem {Iphost = "127.0.0.4", OutputAnswer = " ", IsChecked_1 = false, IsChecked_2 = true},
+                new HostsItem {Iphost = "127.0.0.5", OutputAnswer = " ", IsChecked_1 = false, IsChecked_2 = true}
             }; 
             
         }
@@ -36,7 +36,7 @@ namespace MonPingV4.ViewModels
 
         public void OnClickCommand_Add()
         {
-            Items.Add(new HostsItem() { Iphost = "127.0.0.10", OutputAnswer = "", IsChecked_1 = false, IsChecked_2 = true });
+            Items.Add(new HostsItem() { Iphost = "127.0.0.10", OutputAnswer = " ", IsChecked_1 = false, IsChecked_2 = true });
         }
 
         public void OnClickCommand_Del()
