@@ -14,7 +14,8 @@ namespace MonPingV4.Models
         : INotifyPropertyChanged
     {
 
-       
+        //Чтобы использовать VM нужно использовать ICommand вместо методов void OnClickCommand_Start()
+        //И добавить DataContext = new PingHostVM() в код бихаинд PingHostsListView.xaml.cs
 
         string iphost;
         public string Iphost
