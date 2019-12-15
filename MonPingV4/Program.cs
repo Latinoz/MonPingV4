@@ -27,14 +27,9 @@ namespace MonPingV4
         // container, etc.
         private static void AppMain(Application app, string[] args)
         {
-            //var db = new Database(); 
-
             var window = new MainWindow
             {
-                //DataContext = new MainWindowViewModel(db),
-
                 DataContext = new PingHostsVM()
-
             };
 
             app.Run(window);

@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFrameworks>netcoreapp2.2</TargetFrameworks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="**\*.xaml.cs">
+      <DependentUpon>%(Filename)</DependentUpon>
+    </Compile>
+    <AvaloniaResource Include="**\*.xaml">
+      <SubType>Designer</SubType>
+    </AvaloniaResource>
+    <AvaloniaResource Include="Assets\*" />
+  </ItemGroup>
+  <ItemGroup>
+    <AvaloniaResource Remove="Views\About.xaml" />
+    <AvaloniaResource Remove="Views\EmailSettings.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Views\About.xaml" />
+    <None Remove="Views\EmailSettings.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Avalonia" Version="0.8.1" />
+    <PackageReference Include="Avalonia.Desktop" Version="0.8.1" />
+    <PackageReference Include="Avalonia.ReactiveUI" Version="0.8.1" />
+    <PackageReference Include="NSubsys" Version="1.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\About.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\EmailSettings.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Toast\ConsoleToast.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Assets\avalonia-logo.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>

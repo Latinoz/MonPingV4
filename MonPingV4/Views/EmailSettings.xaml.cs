@@ -1,20 +1,23 @@
-using Avalonia;
+﻿using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 
 namespace MonPingV4.Views
 {
-    public class PingHostsListView : UserControl
+    public class EmailSettings : Window
     {
-        public PingHostsListView()
+        public EmailSettings()
         {
-            InitializeComponent();
+            this.InitializeComponent();
+#if DEBUG
+            this.AttachDevTools();
+#endif
+            this.CanResize = false;
         }
 
         private void InitializeComponent()
         {
             AvaloniaXamlLoader.Load(this);
         }
-       
     }
 }
