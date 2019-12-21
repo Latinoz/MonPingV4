@@ -6,6 +6,8 @@ using MonPingV4.Views;
 using MonPingV4.Services;
 using MonPingV4.Models;
 using System.Collections.ObjectModel;
+using Avalonia.Controls;
+using Avalonia.ReactiveUI;
 
 namespace MonPingV4
 {
