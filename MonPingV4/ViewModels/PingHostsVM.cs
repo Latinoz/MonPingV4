@@ -21,12 +21,11 @@ namespace MonPingV4.ViewModels
 
         public TextOutAnswer answer;
 
-        bool _logCheck = true;
+        static bool _logCheck = true;
         public bool _LogCheck
         {
             get
-            {
-                
+            {                
                 return _logCheck;
             }
 

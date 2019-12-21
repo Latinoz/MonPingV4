@@ -125,7 +125,7 @@ namespace MonPingV4.Models
             }
         }
 
-        static bool _logtray;
+        static bool _logtray = true;
         public bool _Logtray
         {
             get
@@ -174,7 +174,6 @@ namespace MonPingV4.Models
             OnPropertyChanged(nameof(OutputAnswerColor));
             OnPropertyChanged(nameof(IsChecked_1));
             OnPropertyChanged(nameof(IsChecked_2));
-
 
             PingClass obj = new PingClass();
 

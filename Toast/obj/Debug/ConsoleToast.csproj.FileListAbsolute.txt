@@ -1,0 +1,15 @@
+C:\Users\vargas-kampos\source\repos\MonPingV4-third\MonPingV4-third\Toast\obj\Debug\ConsoleToast.csproj.CoreCompileInputs.cache
+C:\Users\vargas-kampos\source\repos\MonPingV4-third\MonPingV4-third\Toast\obj\Debug\ConsoleToast.csprojAssemblyReference.cache
+C:\Users\vargas-kampos\source\repos\MonPingV4-third\MonPingV4-third\Toast\bin\Debug\ConsoleToast.exe.config
+C:\Users\vargas-kampos\source\repos\MonPingV4-third\MonPingV4-third\Toast\bin\Debug\ConsoleToast.exe
+C:\Users\vargas-kampos\source\repos\MonPingV4-third\MonPingV4-third\Toast\bin\Debug\ConsoleToast.pdb
+C:\Users\vargas-kampos\source\repos\MonPingV4-third\MonPingV4-third\Toast\bin\Debug\Microsoft.WindowsAPICodePack.pdb
+C:\Users\vargas-kampos\source\repos\MonPingV4-third\MonPingV4-third\Toast\bin\Debug\Microsoft.WindowsAPICodePack.xml
+C:\Users\vargas-kampos\source\repos\MonPingV4-third\MonPingV4-third\Toast\bin\Debug\Microsoft.WindowsAPICodePack.Shell.pdb
+C:\Users\vargas-kampos\source\repos\MonPingV4-third\MonPingV4-third\Toast\bin\Debug\Microsoft.WindowsAPICodePack.Shell.xml
+C:\Users\vargas-kampos\source\repos\MonPingV4-third\MonPingV4-third\Toast\bin\Debug\Microsoft.WindowsAPICodePack.ShellExtensions.pdb
+C:\Users\vargas-kampos\source\repos\MonPingV4-third\MonPingV4-third\Toast\bin\Debug\Microsoft.WindowsAPICodePack.ShellExtensions.xml
+C:\Users\vargas-kampos\source\repos\MonPingV4-third\MonPingV4-third\Toast\bin\Debug\Windows.xml
+C:\Users\vargas-kampos\source\repos\MonPingV4-third\MonPingV4-third\Toast\obj\Debug\ConsoleToast.csproj.CopyComplete
+C:\Users\vargas-kampos\source\repos\MonPingV4-third\MonPingV4-third\Toast\obj\Debug\ConsoleToast.exe
+C:\Users\vargas-kampos\source\repos\MonPingV4-third\MonPingV4-third\Toast\obj\Debug\ConsoleToast.pdb
