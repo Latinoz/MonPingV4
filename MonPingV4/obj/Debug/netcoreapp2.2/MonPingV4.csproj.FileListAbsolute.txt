@@ -58,11 +58,6 @@ C:\Users\Tico\source\repos\MonPingV4\MonPingV4\bin\Debug\netcoreapp2.2\Microsoft
 C:\Users\Tico\source\repos\MonPingV4\MonPingV4\bin\Debug\netcoreapp2.2\Microsoft.WindowsAPICodePack.Shell.dll
 C:\Users\Tico\source\repos\MonPingV4\MonPingV4\bin\Debug\netcoreapp2.2\ConsoleToast.pdb
 C:\Users\Tico\source\repos\MonPingV4\MonPingV4\bin\Debug\netcoreapp2.2\ConsoleToast.exe.config
-C:\Users\Tico\source\repos\MonPingV4\MonPingV4\bin\Debug\netcoreapp2.2\Windows.xml
-C:\Users\Tico\source\repos\MonPingV4\MonPingV4\bin\Debug\netcoreapp2.2\Microsoft.WindowsAPICodePack.pdb
-C:\Users\Tico\source\repos\MonPingV4\MonPingV4\bin\Debug\netcoreapp2.2\Microsoft.WindowsAPICodePack.xml
-C:\Users\Tico\source\repos\MonPingV4\MonPingV4\bin\Debug\netcoreapp2.2\Microsoft.WindowsAPICodePack.Shell.pdb
-C:\Users\Tico\source\repos\MonPingV4\MonPingV4\bin\Debug\netcoreapp2.2\Microsoft.WindowsAPICodePack.Shell.xml
 C:\Users\Tico\source\repos\MonPingV4\MonPingV4\obj\Debug\netcoreapp2.2\MonPingV4.csprojAssemblyReference.cache
 C:\Users\Tico\source\repos\MonPingV4\MonPingV4\obj\Debug\netcoreapp2.2\MonPingV4.csproj.CoreCompileInputs.cache
 C:\Users\Tico\source\repos\MonPingV4\MonPingV4\obj\Debug\netcoreapp2.2\MonPingV4.AssemblyInfoInputs.cache

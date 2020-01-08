@@ -16,14 +16,6 @@ C:\Users\vargas-kampos\source\repos\MonPingV4-third\MonPingV4-third\Toast\obj\De
 C:\Users\Tico\source\repos\MonPingV4\Toast\bin\Debug\ConsoleToast.exe.config
 C:\Users\Tico\source\repos\MonPingV4\Toast\bin\Debug\ConsoleToast.exe
 C:\Users\Tico\source\repos\MonPingV4\Toast\bin\Debug\ConsoleToast.pdb
-C:\Users\Tico\source\repos\MonPingV4\Toast\bin\Debug\Microsoft.WindowsAPICodePack.pdb
-C:\Users\Tico\source\repos\MonPingV4\Toast\bin\Debug\Microsoft.WindowsAPICodePack.xml
-C:\Users\Tico\source\repos\MonPingV4\Toast\bin\Debug\Microsoft.WindowsAPICodePack.Shell.pdb
-C:\Users\Tico\source\repos\MonPingV4\Toast\bin\Debug\Microsoft.WindowsAPICodePack.Shell.xml
-C:\Users\Tico\source\repos\MonPingV4\Toast\bin\Debug\Microsoft.WindowsAPICodePack.ShellExtensions.pdb
-C:\Users\Tico\source\repos\MonPingV4\Toast\bin\Debug\Microsoft.WindowsAPICodePack.ShellExtensions.xml
-C:\Users\Tico\source\repos\MonPingV4\Toast\bin\Debug\Windows.xml
-C:\Users\Tico\source\repos\MonPingV4\Toast\obj\Debug\ConsoleToast.csprojAssemblyReference.cache
 C:\Users\Tico\source\repos\MonPingV4\Toast\obj\Debug\ConsoleToast.csproj.CoreCompileInputs.cache
 C:\Users\Tico\source\repos\MonPingV4\Toast\obj\Debug\ConsoleToast.csproj.CopyComplete
 C:\Users\Tico\source\repos\MonPingV4\Toast\obj\Debug\ConsoleToast.exe

@@ -252,10 +252,10 @@ namespace MonPingV4.Models
             {
                 logWrite = true;
             }
-            else
-            {
+            //else
+            //{
                 
-            }
+            //}
 
         }
 

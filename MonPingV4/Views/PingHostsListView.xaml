@@ -27,9 +27,9 @@
                     <MenuItem Header="_Save hosts (hosts.json)"
                               Click="SaveItem_Click"/>
                     <Separator/>
-                    <MenuItem Header="_Email Settings"
+                    <!--<MenuItem Header="_Email Settings"
                              Click="EmailSettings_Click"/>
-                    <Separator/>
+                    <Separator/>-->
                     <CheckBox
                     IsChecked="{Binding _LogCheck}">Show Alarm in tray</CheckBox>
                     <Separator/>
@@ -163,23 +163,23 @@
         Grid.Column="0"
         Grid.Row="3"
         Margin="10">   
-            <ToggleButton           
+            <Button           
             Name="toggleButton_Add"
             Margin="5"
             HorizontalAlignment="Left"
             Width="60" 
             Command="{Binding OnClickCommand_Add}"                   
             Content="Add">
-            </ToggleButton>
+            </Button>
 
-           <ToggleButton
+           <Button
             Name="toggleButton_Del"
             Margin="5"
             HorizontalAlignment="Left"
             Width="60"
             Command="{Binding OnClickCommand_Del}"
             Content="Delete">
-            </ToggleButton>     
+            </Button>     
      
       </StackPanel>
 
