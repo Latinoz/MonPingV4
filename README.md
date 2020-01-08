@@ -9,7 +9,7 @@ Cross-platform (Windows, Linux)
 **Features**
 
 * Parallel address ping 
-* Saving a list of hosts to a file on exit
+* Saving a list of hosts to a file
 * Saving logs to a text file
 * Tray output the name of the host that is unavailable
 * Parallel polling, with the ability to stop a separate polling of the host
